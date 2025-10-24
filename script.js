@@ -2,7 +2,6 @@
 const procedures = {
   neck: [
     { name: "Central Venous Catheter (IJ)", key: "central_line" },
-    { name: "Femoral Nerve Block (inguinal)", key: "femoral_nerve_block" }
   ],
   thorax: [
     { name: "Thoracentesis", key: "thoracentesis" },
@@ -11,7 +10,6 @@ const procedures = {
   ],
   abdomen: [
     { name: "Paracentesis", key: "paracentesis" },
-    { name: "FAST-guided fluid assessment", key: "fast" }
   ],
   upper_extremity: [
     { name: "Joint Aspiration", key: "joint_aspiration" },
@@ -19,7 +17,6 @@ const procedures = {
   ],
   lower_extremity: [
     { name: "Knee Aspiration", key: "knee_aspiration" },
-    { name: "Femoral Nerve Block", key: "femoral_nerve_block" },
     { name: "Abscess Drainage", key: "abscess_drainage" }
   ]
 };
