@@ -3,24 +3,68 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ultrasound-Guided Procedural Checklist</title>
+<title>ChecklistUS - Ultrasound-Guided Procedural Checklist</title>
 <style>
-body { font-family: Arial; margin:20px; max-width:900px; }
-h1 { color:#1a4d8f; }
-#body-container { position: relative; width: 300px; margin-bottom:20px; }
-.region { cursor: pointer; fill: rgba(26,77,143,0.2); stroke: #1a4d8f; stroke-width:2; }
-.region:hover { fill: rgba(26,77,143,0.5); }
-#procedure-list { margin-top:10px; }
-button { margin-top: 5px; padding:6px 10px; background:#1a4d8f; color:white; border:none; border-radius:4px; cursor:pointer;}
-button:hover {background:#163d74;}
-#output { margin-top:20px; padding:15px; border:1px solid #ccc; border-radius:5px; background:#f9f9f9;}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+}
+
+h1 {
+    color: #1a4d8f;
+}
+
+#body-container {
+    position: relative;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+#region-hover:hover {
+    fill: rgba(26, 77, 143, 0.3);
+    cursor: pointer;
+}
+
+#procedure-list {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 5px;
+    padding: 6px 10px;
+    background: #1a4d8f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #163d74;
+}
+
+#output {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
 </style>
 </head>
 <body>
-<h1>Ultrasound-Guided Procedural Checklist</h1>
 
-<p>Click a region on the body to see procedures:</p>
+<h1>ChecklistUS - Ultrasound-Guided Procedural Checklist</h1>
+<p>Click a region on the body to see relevant procedures:</p>
+
 <div id="body-container">
-  <svg viewBox="0 0 200 500" width="300" height="750">
-    <!-- Neck -->
-    <rect id="neck" class="region" x="85" y="0" width="30" height
+    <object id="body-svg" type="image/svg+xml" data="body.svg" style="width:100%; height:auto;"></object>
+</div>
+
+<div id="procedure-list"></div>
+<div id="output"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

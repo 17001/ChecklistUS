@@ -1,3 +1,4 @@
+// Define procedures for each body region
 const procedures = {
   neck: [
     { name: "Central Venous Catheter (IJ)", key: "central_line" },
@@ -35,7 +36,7 @@ const checklists = {
 <li>Confirm flash, insert wire, catheter</li>
 <li>Check placement (US or CXR)</li>
 </ul><strong>Complications:</strong> Pneumothorax, arterial puncture, hematoma`,
-  
+
   femoral_nerve_block: `<h3>Femoral Nerve Block</h3>
 <ul>
 <li>Identify femoral nerve and vessels under US</li>
@@ -109,11 +110,12 @@ const checklists = {
 <ul>
 <li>Identify effusion with US</li>
 <li>Sterile prep, local anesthesia</li>
-<li>Insert needle under US</li>
+<li>Insert needle under US guidance</li>
 <li>Aspirate fluid</li>
 </ul><strong>Complications:</strong> Bleeding, infection`
 };
 
+// Function to show procedures when a region is clicked
 function selectRegion(region) {
   const procedureListDiv = document.getElementById("procedure-list");
   procedureListDiv.innerHTML = "<strong>Select a procedure:</strong><br>";
@@ -128,6 +130,7 @@ function selectRegion(region) {
   document.getElementById("output").innerHTML = "";
 }
 
+// Function to display checklist for a selected procedure
 function showChecklist(procedureKey) {
   document.getElementById("output").innerHTML = checklists[procedureKey];
 }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 500" width="300" height="750">
+
+  <!-- Simple body silhouette -->
+  <rect x="85" y="0" width="30" height="50" fill="#ccc"/> <!-- neck -->
+  <rect x="60" y="50" width="80" height="120" fill="#ccc"/> <!-- thorax -->
+  <rect x="60" y="170" width="80" height="120" fill="#ccc"/> <!-- abdomen -->
+  <rect x="0" y="50" width="60" height="120" fill="#ccc"/> <!-- left arm -->
+  <rect x="140" y="50" width="60" height="120" fill="#ccc"/> <!-- right arm -->
+  <rect x="60" y="290" width="35" height="210" fill="#ccc"/> <!-- left leg -->
+  <rect x="105" y="290" width="35" height="210" fill="#ccc"/> <!-- right leg -->
+
+  <!-- Transparent clickable overlays -->
+  <rect id="neck" onclick="parent.selectRegion('neck')" x="85" y="0" width="30" height="50" fill="transparent" stroke="blue" stroke-width="2"/>
+  <rect id="thorax" onclick="parent.selectRegion('thorax')" x="60" y="50" width="80" height="120" fill="transparent" stroke="blue" stroke-width="2"/>
+  <rect id="abdomen" onclick="parent.selectRegion('abdomen')" x="60" y="170" width="80" height="120" fill="transparent" stroke="blue" stroke-width="2"/>
+  <rect id="upper_extremity_left" onclick="parent.selectRegion('upper_extremity')" x="0" y="50" width="60" height="120" fill="transparent" stroke="blue" stroke-width="2"/>
+  <rect id="upper_extremity_right" onclick="parent.selectRegion('upper_extremity')" x="140" y="50" width="60" height="120" fill="transparent" stroke="blue" stroke-width="2"/>
+  <rect id="lower_extremity_left" onclick="parent.selectRegion('lower_extremity')" x="60" y="290" width="35" height="210" fill="transparent" stroke="blue" stroke-width="2"/>
+  <rect id="lower_extremity_right" onclick="parent.selectRegion('lower_extremity')" x="105" y="290" width="35" height="210" fill="transparent" stroke="blue" stroke-width="2"/>
+
+</svg>
