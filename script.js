@@ -27,8 +27,8 @@ const checklists = {
 <ul>
 <li>Confirm indication and consent</li>
 <li>Trendelenburg position</li>
-<li>Identify IJV with US</li>
-<li>Sterile technique</li>
+<li>Identify IJV with US: look for this landmark</li>
+<li>Sterile technique: drape, gloves, prep</li>
 <li>Needle under US guidance</li>
 <li>Confirm flash, insert wire, catheter</li>
 <li>Check placement (US or CXR)</li>
